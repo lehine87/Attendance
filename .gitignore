@@ -22,3 +22,6 @@ Thumbs.db
 # API 관련 파일
 google_credentials.json
 secrets.toml
+
+# 기타 잡 파일
+error_log/
