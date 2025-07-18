@@ -1,0 +1,43 @@
+2025-07-17 16:27:12.188 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\streamlit_app.py", line 34, in <module>
+    show_attendance_viewer_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 66, in show_attendance_viewer_tab
+    allowed_weekdays = [weekday_map[c] for c in classroom.days_of_week if c in weekday_map]
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Classroom' object has no attribute 'days_of_week'
+2025-07-17 16:27:13.525 File changed in watched directory: C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\__pycache__\attendance_viewer_tab.cpython-313.pyc
+2025-07-17 16:27:13.966 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\streamlit_app.py", line 34, in <module>
+    show_attendance_viewer_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 66, in show_attendance_viewer_tab
+    allowed_weekdays = [weekday_map[c] for c in classroom.days_of_week if c in weekday_map]
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Classroom' object has no attribute 'days_of_week'
+2025-07-17 16:27:14.908 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\streamlit_app.py", line 34, in <module>
+    show_attendance_viewer_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 66, in show_attendance_viewer_tab
+    allowed_weekdays = [weekday_map[c] for c in classroom.days_of_week if c in weekday_map]
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Classroom' object has no attribute 'days_of_week'

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+*.log
+
+# 환경파일
+.env
+.venv/
+.venv_office/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+*.xlsx
+*.csv
+
+# API 관련 파일
+google_credentials.json
+secrets.toml

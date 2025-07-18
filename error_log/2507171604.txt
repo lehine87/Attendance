@@ -1,0 +1,108 @@
+2025-07-17 16:04:13.218 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 57, in show_attendance_viewer_tab
+    table = pd.DataFrame(index=[s.name for s in students], columns=date_list)
+                                ^^^^^^
+AttributeError: 'StudentClassroom' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\streamlit_app.py", line 34, in <module>
+    show_attendance_viewer_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 47, in show_attendance_viewer_tab
+    with pd.ExcelWriter(excel_buffer, engine="openpyxl") as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\pandas\io\excel\_base.py", line 1353, in __exit__
+    self.close()
+    ~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\pandas\io\excel\_base.py", line 1357, in close
+    self._save()
+    ~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 110, in _save
+    self.book.save(self._handles.handle)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\writer\excel.py", line 294, in save_workbook
+    writer.save()
+    ~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\writer\excel.py", line 275, in save
+    self.write_data()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\writer\excel.py", line 89, in write_data
+    archive.writestr(ARC_WORKBOOK, writer.write())
+                                   ~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\_writer.py", line 150, in write
+    self.write_views()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\_writer.py", line 137, in write_views
+    active = get_active_sheet(self.wb)
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\_writer.py", line 35, in get_active_sheet
+    raise IndexError("At least one sheet must be visible")
+IndexError: At least one sheet must be visible
+2025-07-17 16:04:15.249 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 57, in show_attendance_viewer_tab
+    table = pd.DataFrame(index=[s.name for s in students], columns=date_list)
+                                ^^^^^^
+AttributeError: 'StudentClassroom' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\streamlit_app.py", line 34, in <module>
+    show_attendance_viewer_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 47, in show_attendance_viewer_tab
+    with pd.ExcelWriter(excel_buffer, engine="openpyxl") as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\pandas\io\excel\_base.py", line 1353, in __exit__
+    self.close()
+    ~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\pandas\io\excel\_base.py", line 1357, in close
+    self._save()
+    ~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 110, in _save
+    self.book.save(self._handles.handle)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\writer\excel.py", line 294, in save_workbook
+    writer.save()
+    ~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\writer\excel.py", line 275, in save
+    self.write_data()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\writer\excel.py", line 89, in write_data
+    archive.writestr(ARC_WORKBOOK, writer.write())
+                                   ~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\_writer.py", line 150, in write
+    self.write_views()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\_writer.py", line 137, in write_views
+    active = get_active_sheet(self.wb)
+  File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\openpyxl\workbook\_writer.py", line 35, in get_active_sheet
+    raise IndexError("At least one sheet must be visible")
+IndexError: At least one sheet must be visible
+Exception ignored in: <function ZipFile.__del__ at 0x00000222C3269B20>
+Traceback (most recent call last):
+  File "C:\Users\lehin\anaconda3\Lib\zipfile\__init__.py", line 1988, in __del__
+    self.close()
+  File "C:\Users\lehin\anaconda3\Lib\zipfile\__init__.py", line 2005, in close
+    self.fp.seek(self.start_dir)
+ValueError: I/O operation on closed file.
+2025-07-17 16:04:21.652 File changed in watched directory: C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\__pycache__\attendance_viewer_tab.cpython-313.pyc

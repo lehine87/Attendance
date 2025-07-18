@@ -1,0 +1,33 @@
+streamlit.errors.StreamlitDuplicateElementId: There are multiple `button` elements with the same auto-generated ID. When this element is created, it is assigned an internal ID based on the element type and provided parameters. Multiple elements with the same type and parameters will cause this error.
+
+To fix this error, please pass a unique `key` argument to the `button` element.
+
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\streamlit_app.py", line 34, in <module>
+    show_attendance_viewer_tab()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\app\tabs\attendance_viewer_tab.py", line 94, in show_attendance_viewer_tab
+    if st.button("📤 전체 반 시트 저장"):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\runtime\metrics_util.py", line 443, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\elements\widgets\button.py", line 243, in button
+    return self.dg._button(
+           ~~~~~~~~~~~~~~~^
+        label,
+        ^^^^^^
+    ...<10 lines>...
+        ctx=ctx,
+        ^^^^^^^^
+    )
+    ^
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\elements\widgets\button.py", line 1013, in _button
+    element_id = compute_and_register_element_id(
+        "button",
+    ...<9 lines>...
+        use_container_width=use_container_width,
+    )
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\elements\lib\utils.py", line 254, in compute_and_register_element_id
+    _register_element_id(ctx, element_type, element_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "C:\Users\lehin\OneDrive\03_Student_Managing_Project\.venv_office\Lib\site-packages\streamlit\elements\lib\utils.py", line 148, in _register_element_id
+    raise StreamlitDuplicateElementId(element_type)
